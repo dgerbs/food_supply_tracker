@@ -1,0 +1,18 @@
+<table> 
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+     <% @inventory.each do |inventory| %>
+      <tr>
+        <td><%= inventory.title %></td>
+        <td><%= inventory.description %></td>
+        <td><%= inventory.quantity %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table
